@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>School of Lottie</title>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+    <link rel="stylesheet" href="css/widgets.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="navbar">
+            <div class="navbar-brand">
+                School of <span style="color: #0fc9cc"> Lottie</span>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item nav-item-toggle link-button night-mode-toggle">
+                    <lottie-interactive path="animations/day-night-toggle.json" interaction="switch"></lottie-interactive>
+                </div>
+            </div>
+    </div>
+
+    <div class="page-section">
+        <div class="row">
+            <div class="col lottie-card mr-5">
+                <lottie-interactive path="animations/lottie.json" autoplay class="lottie-interactive" aspect-ratio="xMidYMid meet" interaction="click"></lottie-interactive>
+            </div>
+            <div class="col ml-4">
+                <h1 class="header">
+                    Welcome to the school of <span style="color: #0fc9cc; text-decoration: underline; cursor:default;"> Lottie</span>
+                </h1>
+                <p>
+                    Learn about everything to do with Lottie. Design. Animation. Integration.
+                </p>
+
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="text-left">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <div class="text-center" id="begin-section">
+            <div class="row">
+                <div class="col justify-content-center align-items-center m-auto">
+                    <h2>
+                        Not sure where to <span style="color: #ffd500"> begin? </span>
+                    </h2>
+                    <p>
+                        No worries, we'll help you get the ball rolling, err, climbing.
+                    </p>
+                </div>
+                <div class="col no-gutters p-0">
+                    <!-- TODO: path=animations/ball-on-stairs.json interaction="play-on-show"-->
+                    <lottie-interactive path="animations/ball-on-stairs.json" interaction="play-on-show" loop aspect-ratio="xMidYMid meet" style="display: inline"></lottie-interactive>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section" id="lighthouse-section">
+        <h4 class="text-center">Learn how to create Lottie animations, add them to a websites and interact with them.</h4>
+        <div class="row">
+            <div class="col">
+                <lottie-player id="firstLottie" src="animations/lighthouse.json"
+                               class="lottie-player align-items-center justify-content-center ml-auto mr-auto"
+                               style="height: 600px; width: 700px">"></lottie-player>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <div id="steps-section">
+            <p class="text-center">Did you know about these interactions?</p>
+            <div class="text-center">
+                <div class="row">
+                    <div class="col justify-content-center m-auto">
+                        1.
+                    </div>
+                    <div class="col">
+                        <lottie-interactive path="animations/contacts-list.json" interaction="click"></lottie-interactive>
+                    </div>
+                    <div class="col justify-content-center m-auto">
+                        On click
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col justify-content-center m-auto">
+                        2.
+                    </div>
+                    <div class="col justify-content-center m-auto">
+                        <lottie-interactive path="animations/dashboard.json" interaction="hover"></lottie-interactive>
+                    </div>
+                    <div class="col justify-content-center m-auto">
+                        On hover
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col justify-content-center m-auto">
+                        3.
+                    </div>
+                    <div class="col">
+                        <lottie-interactive path="animations/cpu-lock.json" interaction="morph"></lottie-interactive>
+                    </div>
+                    <div class="col justify-content-center m-auto">
+                        Morph
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col justify-content-center m-auto">
+                        4.
+                    </div>
+                    <div class="col">
+                        <lottie-interactive path="animations/tricube-morph.json" interaction="morph-lock"></lottie-interactive>
+                    </div>
+                    <div class="col justify-content-center m-auto">
+                        Morph click
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section" id="blueprint-section">
+        <h4 class="text-center">Learn the blueprints of what makes Lottie animations great.</h4>
+        <div class="row">
+            <div class="col-md">
+                <lottie-player id="blueprint" src="animations/blueprint.json"
+                               class="lottie-player align-items-center justify-content-center ml-auto mr-auto"
+                               style="width:400px; height: 400px;">"></lottie-player>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>School of <span style="color: #0fc9cc">Lottie </span></p>
+    </footer>
+</div>
+
+<!--Scripts-->
+
+<!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- Lottie libraries -->
+    <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+<!-- Our interactivity code -->
+<script type="text/javascript" src="js/interactions.js"></script>
+</body>
+</html>
