@@ -6,7 +6,7 @@ Current number of courses available: [1].
 
 Current courses:
 
-##Making Lotties Interactive
+## Making Lotties Interactive
 
 - Lesson 00 - Introduction + Setting the foundation
 - Lesson 01 - Click + Freeze-click
