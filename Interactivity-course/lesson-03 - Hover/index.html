@@ -23,7 +23,6 @@
             <div class="navbar-nav ml-auto">
                 <div class="nav-item nav-item-toggle link-button night-mode-toggle">
                     <!-- day-night-toggle.json | interaction: switch -->
-                    <lottie-interactive path="animations/day-night-toggle.json" interaction="switch"></lottie-interactive>
                 </div>
             </div>
     </div>
@@ -32,7 +31,7 @@
         <div class="row">
             <div class="col lottie-card mr-5">
                 <!-- lottie.json | interaction: click | aspect-ratio: 'xMidYMid meet'-->
-                <lottie-interactive path="animations/lottie.json" autoplay class="lottie-interactive" aspect-ratio="xMidYMid meet" interaction="click"></lottie-interactive>
+                <lottie-interactive path="animations/lottie.json" interaction="click" autoplay></lottie-interactive>
             </div>
             <div class="col ml-4">
                 <h1 class="header">
@@ -74,7 +73,7 @@
                 </div>
                 <div class="col no-gutters p-0">
                     <!-- ball-on-stairs.json | interaction: play-on-show -->
-                    <lottie-interactive path="animations/ball-on-stairs.json" interaction="play-on-show" loop aspect-ratio="xMidYMid meet" style="display: inline"></lottie-interactive>
+                    <lottie-interactive path="animations/ball-on-stairs.json" interaction="play-on-show" loop></lottie-interactive>
                 </div>
             </div>
         </div>
@@ -85,9 +84,6 @@
         <div class="row">
             <div class="col">
                 <!-- lottie-player | lighthouse.json | sync-to-scroll -->
-                <lottie-player id="lighthouse" src="animations/lighthouse.json"
-                               class="align-items-center justify-content-center ml-auto mr-auto"
-                               style="height: 600px; width: 700px">"></lottie-player>
             </div>
         </div>
     </div>
@@ -112,6 +108,18 @@
                     <div class="col justify-content-center m-auto">
                         2.
                     </div>
+                    <div class="col">
+                        <!-- animations/squishy-isometric-cube-loader.json | interaction: freeze-click -->
+                        <lottie-interactive path="animations/squishy-isometric-cube-loader.json" interaction="freeze-click"></lottie-interactive>
+                    </div>
+                    <div class="col justify-content-center m-auto">
+                        Freeze click
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col justify-content-center m-auto">
+                        3.
+                    </div>
                     <div class="col justify-content-center m-auto">
                         <!-- dashboard.json | interaction: hover -->
                         <lottie-interactive path="animations/dashboard.json" interaction="hover"></lottie-interactive>
@@ -126,7 +134,6 @@
                     </div>
                     <div class="col">
                         <!-- cpu-lock.json | interaction: morph -->
-                        <lottie-interactive path="animations/cpu-lock.json" interaction="morph"></lottie-interactive>
                     </div>
                     <div class="col justify-content-center m-auto">
                         Morph
@@ -138,10 +145,9 @@
                     </div>
                     <div class="col">
                         <!-- tricube-morph.json | interaction: morph-lock -->
-                        <lottie-interactive path="animations/tricube-morph.json" interaction="morph-lock"></lottie-interactive>
                     </div>
                     <div class="col justify-content-center m-auto">
-                        Morph click
+                        Morph lock
                     </div>
                 </div>
             </div>
@@ -153,9 +159,6 @@
         <div class="row">
             <div class="col-md">
                 <!-- lottie-player | blueprint.json | horizontal scroll -->
-                <lottie-player id="blueprint" src="animations/blueprint.json"
-                               class="lottie-player align-items-center justify-content-center ml-auto mr-auto"
-                               style="width:400px; height: 400px;">"></lottie-player>
             </div>
         </div>
     </div>
@@ -173,10 +176,11 @@
 
 <!-- Lottie libraries -->
     <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
 <!-- Our interactivity code -->
     <script type="text/javascript" src="js/interactions.js"></script>
+
 </body>
 </html>
