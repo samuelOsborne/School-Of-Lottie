@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>School of Lottie</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+    <link rel="stylesheet" href="css/widgets.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="page-section" id="welcome-section">
+        <div class="row m-auto justify-content-center align-items-center" style="width: 50%">
+            <div class="col-sm mr-5">
+                <div id="worm-container">
+                </div>
+            </div>
+        </div>
+        <div class="row m-auto justify-content-center">
+            <div class="col">
+                Stroke width
+                <input id="slide" type="range" min="5" max="35" step="1" value="20" onchange="callChangeStrokeWidth(this.value)">
+            </div>
+            <div class="col text-center">
+                <input id="color-1" type="input" min="5" max="35" step="1" value="#e02c5f" onchange="callChangeStrokeColor(this.value, 0)">
+            </div>
+            <div class="col text-right">
+                <input id="color-2" type="input" min="5" max="35" step="1" value="#FF0091" onchange="callChangeStrokeColor(this.value, 1)">
+            </div>
+        </div>
+        <div class="pt-5 row m-auto justify-content-center align-items-center">
+            <div class="col">
+                Colors:
+            </div>
+            <div class="col">
+                #3f51b5
+            </div>
+            <div class="col">
+                #ffeb3b
+            </div>
+            <div class="col">
+                #e91e63
+            </div>
+            <div class="col">
+                #ff5722
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>School of <span style="color: #0fc9cc">Lottie </span></p>
+    </footer>
+</div>
+
+<!--Scripts-->
+
+<!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- Lottie libraries -->
+    <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Our interactivity code -->
+    <script type="text/javascript" src="js/interactions.js"></script>
+
+</body>
+</html>
